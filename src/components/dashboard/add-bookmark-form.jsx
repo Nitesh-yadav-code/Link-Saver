@@ -61,9 +61,9 @@ export default function AddBookmarkForm() {
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
-      className="rounded-lg border bg-white p-6 shadow-sm dark:border-gray-700 dark:bg-gray-800"
+      className="rounded-lg border bg-slate-200 p-6 shadow-sm border-slate-100 dark:border-gray-700 dark:bg-gray-800"
     >
-      <h2 className="mb-4 text-xl text-slate-100 font-bold">Add New Bookmark</h2>
+      <h2 className="mb-4 text-xl text-slate-700 dark:text-slate-100 font-bold">Add New Bookmark</h2>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4 sm:flex-row">
         <input
           type="url"

@@ -18,7 +18,7 @@ export default function LandingFooter() {
             >
               <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
             </svg>
-            <span className="text-lg text-white font-bold">LinkVault</span>
+            <span className="text-lg text-slate-700 dark:text-white font-bold">LinkVault</span>
           </div>
           <div className="flex gap-6">
             <Link

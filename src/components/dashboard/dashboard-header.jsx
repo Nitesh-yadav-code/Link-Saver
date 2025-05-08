@@ -30,7 +30,7 @@ export default function DashboardHeader({ user }) {
   }
 
   return (
-    <header className="sticky top-0 z-10 border-b bg-white shadow-sm dark:border-gray-800 dark:bg-gray-900">
+    <header className="sticky top-0 z-10 border-b bg-slate-200 shadow-sm dark:border-gray-800 dark:bg-gray-900">
       <div className="container w-[90%] mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
           <svg
@@ -45,7 +45,7 @@ export default function DashboardHeader({ user }) {
           >
             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
           </svg>
-          <span className="text-xl text-slate-100 font-bold">LinkVault</span>
+          <span className="text-xl text-slate-700 dark:text-white font-bold">LinkVault</span>
         </Link>
         <div className="flex items-center gap-4">
           {/* Theme Toggle */}

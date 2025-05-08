@@ -12,7 +12,7 @@ const LandingHeros = () => {
               transition={{ duration: 0.5 }}
               className="mx-auto max-w-3xl space-y-6"
             >
-              <h1 className="text-4xl text-white font-extrabold tracking-tight sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl text-slate-700 dark:text-white font-extrabold tracking-tight sm:text-5xl md:text-6xl">
                 Save links with <span className="text-blue-500">auto-summaries</span>
               </h1>
               <p className="mx-auto max-w-2xl text-xl text-gray-500 dark:text-gray-400">

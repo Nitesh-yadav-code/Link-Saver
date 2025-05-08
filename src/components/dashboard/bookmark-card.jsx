@@ -25,7 +25,7 @@ export default function BookmarkCard({ bookmark, view }) {
 
   if (view === "list") {
     return (
-      <div className="flex h-full flex-col overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800 md:flex-row">
+      <div className="flex h-full flex-col overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md border-slate-100 dark:border-gray-700 dark:bg-gray-800 md:flex-row">
         <div className="flex items-center gap-4 p-4 md:w-1/3">
           <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center overflow-hidden rounded bg-gray-100 dark:bg-gray-700">
             {bookmark.favicon ? (
@@ -48,8 +48,8 @@ export default function BookmarkCard({ bookmark, view }) {
             )}
           </div>
           <div className="min-w-0 flex-1">
-            <h3 className="truncate text-slate-100  font-medium">{bookmark.title}</h3>
-            <p className="truncate text-xs text-slate-300 ">{bookmark.url}</p>
+            <h3 className="truncate text-slate-700 dark:text-slate-100  font-medium">{bookmark.title}</h3>
+            <p className="truncate text-xs text-slate-700 dark:text-slate-300 ">{bookmark.url}</p>
           </div>
         </div>
         <div className="flex-1 p-4 pt-4 md:w-2/3">
@@ -157,7 +157,7 @@ export default function BookmarkCard({ bookmark, view }) {
   }
 
   return (
-    <div className="h-full overflow-hidden rounded-lg border bg-white shadow-sm transition-all hover:shadow-md dark:border-gray-700 dark:bg-gray-800">
+    <div className="h-full overflow-hidden rounded-lg border  shadow-sm transition-all hover:shadow-md border-slate-100 dark:border-gray-700 bg-slate-50 dark:bg-gray-800">
       <div className="flex items-start justify-between space-y-0 border-b p-4 pb-2 dark:border-gray-700">
         <div className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center overflow-hidden rounded bg-gray-100 dark:bg-gray-700">
@@ -181,7 +181,7 @@ export default function BookmarkCard({ bookmark, view }) {
             )}
           </div>
           <div>
-            <h3 className="line-clamp-1 text-slate-100 font-medium">{bookmark.title}</h3>
+            <h3 className="line-clamp-1 text-slate-700 dark:text-slate-100 font-medium">{bookmark.title}</h3>
           </div>
         </div>
         <div className="flex gap-2">
@@ -227,7 +227,7 @@ export default function BookmarkCard({ bookmark, view }) {
         </div>
       </div>
       <div className="p-4 pb-2">
-        <p className="mb-2 line-clamp-1 text-xs text-slate-300">{bookmark.url}</p>
+        <p className="mb-2 line-clamp-1 text-xs text-slate-700 dark:text-slate-300">{bookmark.url}</p>
         <p className="line-clamp-3 text-gray-500 dark:text-gray-400 text-sm">{bookmark.summary}</p>
       </div>
       <div className="flex flex-col items-start gap-2 p-4 pt-2">

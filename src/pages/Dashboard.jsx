@@ -23,7 +23,7 @@ export default function Dashboard() {
   }
 
   return (
-      <div className="flex bg-gray-900 min-h-screen flex-col">
+      <div className="flex bg-slate-200 dark:bg-gray-900 min-h-screen flex-col">
         <DashboardHeader user={user} />
         <main className="container mx-auto flex-1 px-4 py-8">
           <DashboardContent />
